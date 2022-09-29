@@ -12,30 +12,9 @@ body {
 }
 
 #root,
-html {
+html, body {
   height: 100%;
 }
-
-/* #container{
-  display: flex;
-  justify-content: center;
- 
-} */
-
-
-/* .titulo h1{
-  font-family: cambria;
-  font-style: italic;
-  font-size: 60px;
-  font-weight: bold;
-  top: 30px;
-  color:rgb(219, 0, 0);
-  -webkit-text-stroke: 2px rgb(0, 16, 87);
-  text-decoration-line: underline;
-  text-decoration-color: rgb(0, 162, 255);
-  text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
-}  */
-
 
 #calculator {
   transform: translateX(-50%, -50%);
@@ -53,6 +32,11 @@ html {
   .titulo h1{opacity: 0;}
   #calculator{
     margin: 0 auto;
+  }
+  #root{
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 }
 
