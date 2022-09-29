@@ -30,7 +30,9 @@ function Calculadora() {
         const opp = { operacion: divi }
         const parseJson = JSON.stringify(opp)
         try {
-            const res = await fetch(`http://localhost:3000/operacion/${parseJson}`)
+            const res = await fetch(`https://servidor-express23.herokuapp.com/operacion/${parseJson}`)
+            // console.log(res)
+            // const res = await fetch(`http://localhost:3000/operacion/${parseJson}`)
             const resultado = await res.json();
             setResult(resultado.resultado);
         } catch (err) {
