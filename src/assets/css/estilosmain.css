@@ -1,0 +1,88 @@
+#container{
+    display: flex;
+    justify-content: center;
+   
+}
+
+
+.titulo h1{ 
+    
+  color: rgba(2, 0, 90, 0.9);
+  /* font: normal 70px Varela Round, sans-serif; */
+  font-family: georgia;
+  font-style: italic;
+  font-size: 50px;
+  height: 140px;
+  left: 0;
+  letter-spacing: 5px;
+  margin: -80px 0 0 0;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 10%;
+  width: 100%;
+  animation: move linear 2100ms infinite;  
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+      4px -4px 0 rgb(255, 57, 57), 
+      3px -3px 0 rgb(255, 57, 57), 
+      2px -2px 0 rgb(255, 57, 57), 
+      1px -1px 0 rgb(255, 57, 57),
+      -4px 4px 0 rgb(46, 161, 255), 
+      -3px 3px 0 rgb(46, 161, 255), 
+      -2px 2px 0 rgb(46, 161, 255), 
+      -1px 1px 0 rgb(46, 161, 255)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 rgb(46, 161, 255), 
+      -3px -3px 0 rgb(46, 161, 255), 
+      -2px -2px 0 rgb(46, 161, 255), 
+      -1px -1px 0 rgb(46, 161, 255),
+      4px 4px 0 rgb(255, 57, 57), 
+      3px 3px 0 rgb(255, 57, 57), 
+      2px 2px 0 rgb(255, 57, 57), 
+      1px 1px 0 rgb(255, 57, 57)      
+    ;
+  }
+  50% {
+    text-shadow:
+      -4px 4px 0 rgb(255, 57, 57), 
+      -3px 3px 0 rgb(255, 57, 57), 
+      -2px 2px 0 rgb(255, 57, 57), 
+      -1px 1px 0 rgb(255, 57, 57),
+      4px -4px 0 rgb(46, 161, 255), 
+      3px -3px 0 rgb(46, 161, 255), 
+      2px -2px 0 rgb(46, 161, 255), 
+      1px -1px 0 rgb(46, 161, 255)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 rgb(46, 161, 255), 
+      3px 3px 0 rgb(46, 161, 255), 
+      2px 2px 0 rgb(46, 161, 255), 
+      1px 1px 0 rgb(46, 161, 255),
+      -4px -4px 0 rgb(255, 57, 57), 
+      -3px -3px 0 rgb(255, 57, 57), 
+      -2px -2px 0 rgb(255, 57, 57), 
+      -1px -1px 0 rgb(255, 57, 57)      
+    ;
+  }
+  100% {
+    text-shadow:
+      4px -4px 0 rgb(255, 57, 57), 
+      3px -3px 0 rgb(255, 57, 57), 
+      2px -2px 0 rgb(255, 57, 57), 
+      1px -1px 0 rgb(255, 57, 57),
+      -4px 4px 0 rgb(46, 161, 255), 
+      -3px 3px 0 rgb(46, 161, 255), 
+      -2px 2px 0 rgb(46, 161, 255), 
+      -1px 1px 0 rgb(46, 161, 255)
+    ;
+  }  
+}
