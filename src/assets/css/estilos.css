@@ -1,24 +1,28 @@
-body{
-    /* background-image: url('./src/assets/img/jeh1.jpg');
+body {
+  /* background-image: url('./src/assets/img/jeh1.jpg');
     background-repeat: no-repeat; */
-    /*background-image: url('https://img.besthqwallpapers.com/Uploads/27-8-2018/63271/atletico-junior-fc-cd-popular-junior-fc-4k-leather-texture-logo.jpg');*/
-    background-img: url('https://es.m.wikipedia.org/wiki/Archivo:US_Sons_OfLiberty_9Stripes_Flag.svg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    alig-item: center;
-   
+  background-image: url('https://img.besthqwallpapers.com/Uploads/27-8-2018/63271/atletico-junior-fc-cd-popular-junior-fc-4k-leather-texture-logo.jpg');
+  /* background-img: url('https://es.m.wikipedia.org/wiki/Archivo:US_Sons_OfLiberty_9Stripes_Flag.svg'); */
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
 }
 
- /* #container{
+#root,
+html {
+  height: 100%;
+}
+
+/* #container{
   display: flex;
   justify-content: center;
  
 } */
 
- 
+
 /* .titulo h1{
   font-family: cambria;
   font-style: italic;
@@ -33,385 +37,528 @@ body{
 }  */
 
 
-#calculator{
-    top: 15%;
-    left: 35%;
-    position: absolute;
-    transform: translateX(-50%, -50%);
+#calculator {
+  transform: translateX(-50%, -50%);
+  margin: 50px auto;
+  width: auto;
+  text-align: center;
+  border: 7px solid rgb(0, 12, 121);
+  background: white;
+  box-shadow: 0px 0px 20px 15px rgb(97, 121, 255);
+  border-radius: 5px;
+  height: auto;
+  padding: 10px;
+}
+@media screen and (max-width: 450px){
+  .titulo h1{opacity: 0;}
+  #calculator{
     margin: 0 auto;
-    width: 400px;
-    text-align: center; 
-    border: 7px solid rgb(0, 12, 121);
-    background: white;
-    box-shadow: 0px 0px 20px 15px rgb(97, 121, 255);
-    border-radius: 5px;
-    height: 600px;
-    padding: 10px;
+  }
 }
 
-#grid{
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-auto-rows: minmax(100px, auto);
-   
+#grid {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-auto-rows: minmax(100px, auto);
+
 }
 
 
 input[type="text"] {
-    background: url('../img/tibu1.png');
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 100px;
-    width: 392px;
-    border: none;
-    border-bottom: 3px solid rgb(0, 18, 184);
-    text-align: right;
-    text-shadow: 0 0 2px #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
-    
-    color: rgb(0, 42, 65);
-    font-size: 35px;
-    font-family: georgia;
+  background: url('../img/tibu1.png');
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100px;
+  width: 392px;
+  border: none;
+  border-bottom: 3px solid rgb(0, 18, 184);
+  text-align: right;
+  text-shadow: 0 0 2px #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+
+  color: rgb(0, 42, 65);
+  font-size: 35px;
+  font-family: georgia;
 }
 
 
-#escu{
-   background: url('../img/jujuescu88.png') ;
-   background-repeat: no-repeat;
-   border: none;
-   background-position: center;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#escu {
+  background: url('../img/jujuescu88.png');
+  background-repeat: no-repeat;
+  border: none;
+  background-position: center;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #escu:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-    background-color: rgb(255, 51, 51);
-  } #escu:focus{
-    animation: iluEsc 2s ease-in-out;
 }
+
+#escu:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+  background-color: rgb(255, 51, 51);
+}
+
+#escu:focus {
+  animation: iluEsc 2s ease-in-out;
+}
+
 @keyframes iluEsc {
-    from{background: url('../img/comesañaGud.png');
-      background-color: #f49b9b;}
+  from {
+    background: url('../img/comesañaGud.png');
+    background-color: #f49b9b;
+  }
 }
 
-#sigm{
-    background: url('../img/cta+.png') ;
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigm {
+  background: url('../img/cta+.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigm:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigm:focus{
-    animation: iluMas 1.5s ease-in-out;
 }
+
+#sigm:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigm:focus {
+  animation: iluMas 1.5s ease-in-out;
+}
+
 @keyframes iluMas {
-    from{background: url('../img/ctr+.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctr+.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sigr{
-    background: url('../img/cta-.png') ;
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigr {
+  background: url('../img/cta-.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigr:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigr:focus{
-    animation: iluMen 1.5s ease-in-out;
 }
+
+#sigr:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigr:focus {
+  animation: iluMen 1.5s ease-in-out;
+}
+
 @keyframes iluMen {
-    from{background: url('../img/ctr-.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctr-.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sigx{
-    background: url('../img/ctax.png') ;
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigx {
+  background: url('../img/ctax.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigx:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigx:focus{
-    animation: iluPor 1.5s ease-in-out;
 }
+
+#sigx:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigx:focus {
+  animation: iluPor 1.5s ease-in-out;
+}
+
 @keyframes iluPor {
-    from{background: url('../img/ctrx.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctrx.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sig÷{
-    background: url('../img/cta÷.png') ;
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sig÷ {
+  background: url('../img/cta÷.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sig÷:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sig÷:focus{
-    animation: iluDiv 1.5s ease-in-out;
 }
+
+#sig÷:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sig÷:focus {
+  animation: iluDiv 1.5s ease-in-out;
+}
+
 @keyframes iluDiv {
-    from{background: url('../img/ctr÷.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctr÷.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sig2{
-    background: url('../img/cta2.png');
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sig2 {
+  background: url('../img/cta2.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sig2:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sig2:focus{
-    animation: iluPot 1.5s ease-in-out;
 }
+
+#sig2:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sig2:focus {
+  animation: iluPot 1.5s ease-in-out;
+}
+
 @keyframes iluPot {
-    from{background: url('../img/ctr2.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctr2.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sigi{
-    background: url('../img/cta=.png');
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigi {
+  background: url('../img/cta=.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigi:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigi:focus{
-    animation: iluIg 1.5s ease-in-out;
 }
+
+#sigi:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigi:focus {
+  animation: iluIg 1.5s ease-in-out;
+}
+
 @keyframes iluIg {
-    from{background: url('../img/ctr=.png');
-        background-color: #9bf1f4;}
+  from {
+    background: url('../img/ctr=.png');
+    background-color: #9bf1f4;
+  }
 }
 
-#sigc{
-    background: url('../img/ctac.png');
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigc {
+  background: url('../img/ctac.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigc:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  }#sigc:focus{
-    animation: iluC 1.5s ease-in-out;
 }
+
+#sigc:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigc:focus {
+  animation: iluC 1.5s ease-in-out;
+}
+
 @keyframes iluC {
-    from{background: url('../img/ctrc.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctrc.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sigac{
-    background: url('../img/ctaac.png');
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigac {
+  background: url('../img/ctaac.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigac:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigac:focus{
-    animation: iluAc 1.5s ease-in-out;
 }
+
+#sigac:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigac:focus {
+  animation: iluAc 1.5s ease-in-out;
+}
+
 @keyframes iluAc {
-    from{background: url('../img/ctrac.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/ctrac.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#sigco{
-    background: url('../img/ctaco.png');
-   background-repeat: no-repeat;
-   border: none;
-   box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
+#sigco {
+  background: url('../img/ctaco.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 red;
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #sigco:hover {
-    box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
-  } #sigco:focus{
-    animation: iluCo 1.5s ease-in-out;
 }
+
+#sigco:hover {
+  box-shadow: 0 0 10px 0 red inset, 0 0 10px 4px red;
+}
+
+#sigco:focus {
+  animation: iluCo 1.5s ease-in-out;
+}
+
 @keyframes iluCo {
-    from{background: url('../img/ctrco.png');
-    background-color: #d3f0ff;}
+  from {
+    background: url('../img/ctrco.png');
+    background-color: #d3f0ff;
+  }
 }
 
-#btn1{
-    background: url('../img/db1.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
-    -webkit-transition: all 50ms ease-in-out;
-    transition: all 150ms ease-in-out;
-  } #btn1:hover {
-      box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-    } #btn1:focus{
-    animation: ilu1 1.5s ease-in-out;
+#btn1 {
+  background: url('../img/db1.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+  -webkit-transition: all 50ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
+
+#btn1:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn1:focus {
+  animation: ilu1 1.5s ease-in-out;
+}
+
 @keyframes ilu1 {
-    from{background: url('../img/v10.png');
-        background-color: #9bd5f4;}
+  from {
+    background: url('../img/v10.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn2{
-    background: url('../img/db2.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn2 {
+  background: url('../img/db2.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn2:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  } #btn2:focus{
-    animation: ilu2 1.5s ease-in-out;
 }
+
+#btn2:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn2:focus {
+  animation: ilu2 1.5s ease-in-out;
+}
+
 @keyframes ilu2 {
-    from{background: url('../img/teo9.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/teo9.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn3{
-    background: url('../img/db3.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn3 {
+  background: url('../img/db3.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn3:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn3:focus{
-    animation: ilu3 1.5s ease-in-out;
 }
+
+#btn3:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn3:focus {
+  animation: ilu3 1.5s ease-in-out;
+}
+
 @keyframes ilu3 {
-    from{background: url('../img/dia3.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/dia3.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn4{
-    background: url('../img/db4.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn4 {
+  background: url('../img/db4.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn4:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn4:focus{
-    animation: ilu4 1.5s ease-in-out;
 }
+
+#btn4:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn4:focus {
+  animation: ilu4 1.5s ease-in-out;
+}
+
 @keyframes ilu4 {
-    from{background: url('../img/toro4.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/toro4.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn5{
-    background: url('../img/db5.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn5 {
+  background: url('../img/db5.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn5:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn5:focus{
-    animation: ilu5 1.5s ease-in-out;
 }
+
+#btn5:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn5:focus {
+  animation: ilu5 1.5s ease-in-out;
+}
+
 @keyframes ilu5 {
-    from{background: url('../img/gio5.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/gio5.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn6{
-    background: url('../img/db6.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn6 {
+  background: url('../img/db6.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn6:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn6:focus{
-    animation: ilu6 1.5s ease-in-out;
 }
+
+#btn6:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn6:focus {
+  animation: ilu6 1.5s ease-in-out;
+}
+
 @keyframes ilu6 {
-    from{background: url('../img/can6.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/can6.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn7{
-    background: url('../img/db7.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn7 {
+  background: url('../img/db7.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn7:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn7:focus{
-    animation: ilu7 1.5s ease-in-out;
 }
+
+#btn7:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn7:focus {
+  animation: ilu7 1.5s ease-in-out;
+}
+
 @keyframes ilu7 {
-    from{background: url('../img/bac7.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/bac7.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn8{
-    background: url('../img/db8.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn8 {
+  background: url('../img/db8.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn8:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  }  #btn8:focus{
-    animation: ilu8 1.5s ease-in-out;
 }
+
+#btn8:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn8:focus {
+  animation: ilu8 1.5s ease-in-out;
+}
+
 @keyframes ilu8 {
-    from{background: url('../img/ch8.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/ch8.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn9{
-    background: url('../img/db9.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn9 {
+  background: url('../img/db9.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn9:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  } #btn9:focus{
-    animation: ilu9 1.5s ease-in-out;
 }
+
+#btn9:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn9:focus {
+  animation: ilu9 1.5s ease-in-out;
+}
+
 @keyframes ilu9 {
-    from{background: url('../img/rene9.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/rene9.png');
+    background-color: #9bd5f4;
+  }
 }
 
-#btn0{
-    background: url('../img/db0.png') ;
-    background-repeat: no-repeat;
-    border: none;
-    box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
+#btn0 {
+  background: url('../img/db0.png');
+  background-repeat: no-repeat;
+  border: none;
+  box-shadow: 0 0 50px 50px transparent inset, 0 0 0 0 rgb(0, 162, 255);
   -webkit-transition: all 50ms ease-in-out;
   transition: all 150ms ease-in-out;
-} #btn0:hover {
-    box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
-  } #btn0:focus{
-    animation: ilu0 1.5s ease-in-out;
 }
+
+#btn0:hover {
+  box-shadow: 0 0 10px 0 rgb(0, 162, 255) inset, 0 0 10px 4px rgb(0, 162, 255);
+}
+
+#btn0:focus {
+  animation: ilu0 1.5s ease-in-out;
+}
+
 @keyframes ilu0 {
-    from{background: url('../img/pibe10.png');
-    background-color: #9bd5f4;}
+  from {
+    background: url('../img/pibe10.png');
+    background-color: #9bd5f4;
+  }
 }
